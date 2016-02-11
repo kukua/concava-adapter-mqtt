@@ -1,0 +1,38 @@
+{
+  "name": "concava-adapter-mqtt",
+  "version": "0.1.0",
+  "description": "ConCaVa adapter for storage through MQTT.",
+  "main": "lib/adapter.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": "lint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukua/node-concava-adapter-mqtt.git"
+  },
+  "keywords": [
+    "concava",
+    "adapter",
+    "storage",
+    "mqtt"
+  ],
+  "author": "Maurits van Mastrigt <maurits@kukua.cc>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kukua/node-concava-adapter-mqtt/issues"
+  },
+  "homepage": "https://github.com/kukua/node-concava-adapter-mqtt#readme",
+  "dependencies": {
+    "mosca": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.3.17",
+    "babel-preset-es2015": "~6.3.13",
+    "eslint": "~1.9.0",
+    "pre-commit": "~1.1.2"
+  }
+}
