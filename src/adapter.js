@@ -1,3 +1,4 @@
+import merge from 'merge'
 import mosca from 'mosca'
 
 // MQTT server
@@ -35,12 +36,16 @@ export let metadata = (req, config, data, cb) => {
 export let storage = (req, { config }, data, { SensorData }, cb) => {
 	if ( ! (data instanceof SensorData)) return cb('Invalid SensorData given.')
 
+	var payload = merge({}, data.getData())
+
+	payload.timestamp = (new Date(payload.timestamp).getTime() || Date.now())
+
 	getClient(config, (err, client) => {
 		if (err) return cb(err)
 
 		client.publish({
 			topic: 'concava/' + data.getDeviceId(),
-			payload: data.getData(),
+			payload: JSON.stringify(payload),
 		}, cb)
 	})
 }

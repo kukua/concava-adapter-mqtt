@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/kukua/node-concava-adapter-mqtt#readme",
   "dependencies": {
+    "merge": "^1.2.0",
     "mosca": "^1.0.2"
   },
   "devDependencies": {
