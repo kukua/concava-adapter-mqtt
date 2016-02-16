@@ -1,6 +1,6 @@
 {
   "name": "concava-adapter-mqtt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ConCaVa adapter for storage through MQTT.",
   "main": "lib/adapter.js",
   "scripts": {
