@@ -36,7 +36,7 @@ export let metadata = (req, config, data, cb) => {
 export let storage = (req, { config }, data, { SensorData }, cb) => {
 	if ( ! (data instanceof SensorData)) return cb('Invalid SensorData given.')
 
-	var payload = merge({}, data.getData())
+	var payload = merge(true, data.getData())
 
 	payload.timestamp = (new Date(payload.timestamp).getTime() || Date.now())
 

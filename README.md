@@ -4,7 +4,7 @@
 
 This storage adapter receives data from ConCaVa and publishes the JSON payload on topic `concava/<device ID>`. [Mosca](https://github.com/mcollina/mosca) is used as the MQTT broker.
 
-See [ConCaVa with MariaDB and MQTT](https://github.com/kukua/concava-setup-mariadb-mqtt) for a working setup.
+See [ConCaVa with MariaDB and MQTT](https://github.com/kukua/concava-setup-mysql-mqtt) for a working setup.
 
 Requires ConCaVa v0.4+.
 
