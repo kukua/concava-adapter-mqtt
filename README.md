@@ -19,9 +19,9 @@ npm install concava-adapter-mqtt
 A ConCaVa configuration example:
 
 ```js
-import { storage } from 'concava-adapter-mqtt'
+const storage = require('concava-adapter-mqtt').storage
 
-export default {
+module.exports = {
 	debug: true,
 
 	...
@@ -40,3 +40,9 @@ export default {
 	},
 }
 ```
+
+## License
+
+This software is licensed under the [MIT license](https://github.com/kukua/node-concava-adapter-mqtt/blob/master/LICENSE).
+
+© 2016 Kukua BV
