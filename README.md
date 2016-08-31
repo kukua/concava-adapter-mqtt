@@ -6,6 +6,8 @@ This storage adapter receives data from ConCaVa and publishes the JSON payload o
 
 See [ConCaVa with MariaDB and MQTT](https://github.com/kukua/concava-setup-mysql-mqtt) for a working setup.
 
+**Note:** The MQTT server is lazy loaded, so it becomes available after processing the first sensor data.
+
 Requires ConCaVa v0.4+.
 
 ## Install
