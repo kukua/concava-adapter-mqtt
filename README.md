@@ -45,6 +45,6 @@ module.exports = {
 
 ## License
 
-This software is licensed under the [MIT license](https://github.com/kukua/node-concava-adapter-mqtt/blob/master/LICENSE).
+This software is licensed under the [MIT license](https://github.com/kukua/concava-adapter-mqtt/blob/master/LICENSE).
 
 © 2016 Kukua BV
